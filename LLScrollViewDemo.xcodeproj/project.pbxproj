@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F968AA0E6D86A8D87D63617 /* libPods-LLScrollViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A50DD483094B1DF96823C2EC /* libPods-LLScrollViewDemo.a */; };
 		B3270ECA1DE0348600C10286 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3270EC91DE0348600C10286 /* main.m */; };
 		B3270ECD1DE0348600C10286 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3270ECC1DE0348600C10286 /* AppDelegate.m */; };
 		B3270ED01DE0348600C10286 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3270ECF1DE0348600C10286 /* ViewController.m */; };
 		B3270ED31DE0348600C10286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3270ED11DE0348600C10286 /* Main.storyboard */; };
 		B3270ED51DE0348600C10286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3270ED41DE0348600C10286 /* Assets.xcassets */; };
 		B3270ED81DE0348600C10286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3270ED61DE0348600C10286 /* LaunchScreen.storyboard */; };
+		B3270EE11DE0602F00C10286 /* LLEndlessPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3270EE01DE0602F00C10286 /* LLEndlessPageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ED4FD3E9404F6299FA39C18 /* Pods-LLScrollViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLScrollViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLScrollViewDemo/Pods-LLScrollViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A50DD483094B1DF96823C2EC /* libPods-LLScrollViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LLScrollViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3270EC51DE0348600C10286 /* LLScrollViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLScrollViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3270EC91DE0348600C10286 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3270ECB1DE0348600C10286 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,9 @@
 		B3270ED41DE0348600C10286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3270ED71DE0348600C10286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3270ED91DE0348600C10286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3270EDF1DE0602F00C10286 /* LLEndlessPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLEndlessPageView.h; sourceTree = "<group>"; };
+		B3270EE01DE0602F00C10286 /* LLEndlessPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLEndlessPageView.m; sourceTree = "<group>"; };
+		BDBC6DDAAEA4884190D42EBA /* Pods-LLScrollViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLScrollViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLScrollViewDemo/Pods-LLScrollViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F968AA0E6D86A8D87D63617 /* libPods-LLScrollViewDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17738A4F6B7A3CF6CFA226C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0ED4FD3E9404F6299FA39C18 /* Pods-LLScrollViewDemo.debug.xcconfig */,
+				BDBC6DDAAEA4884190D42EBA /* Pods-LLScrollViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B3270EBC1DE0348600C10286 = {
 			isa = PBXGroup;
 			children = (
 				B3270EC71DE0348600C10286 /* LLScrollViewDemo */,
 				B3270EC61DE0348600C10286 /* Products */,
+				17738A4F6B7A3CF6CFA226C9 /* Pods */,
+				E4D2FC1C2B12B85FE3A38F50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +81,8 @@
 				B3270ECC1DE0348600C10286 /* AppDelegate.m */,
 				B3270ECE1DE0348600C10286 /* ViewController.h */,
 				B3270ECF1DE0348600C10286 /* ViewController.m */,
+				B3270EDF1DE0602F00C10286 /* LLEndlessPageView.h */,
+				B3270EE01DE0602F00C10286 /* LLEndlessPageView.m */,
 				B3270ED11DE0348600C10286 /* Main.storyboard */,
 				B3270ED41DE0348600C10286 /* Assets.xcassets */,
 				B3270ED61DE0348600C10286 /* LaunchScreen.storyboard */,
@@ -79,6 +100,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E4D2FC1C2B12B85FE3A38F50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A50DD483094B1DF96823C2EC /* libPods-LLScrollViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3270EDC1DE0348600C10286 /* Build configuration list for PBXNativeTarget "LLScrollViewDemo" */;
 			buildPhases = (
+				3133C4F7C28F16E665C2244C /* [CP] Check Pods Manifest.lock */,
 				B3270EC11DE0348600C10286 /* Sources */,
 				B3270EC21DE0348600C10286 /* Frameworks */,
 				B3270EC31DE0348600C10286 /* Resources */,
+				20E82A8E2A0694A1F09ED4B4 /* [CP] Embed Pods Frameworks */,
+				415B53CBC83D8296B64DECFA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,11 +176,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20E82A8E2A0694A1F09ED4B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLScrollViewDemo/Pods-LLScrollViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3133C4F7C28F16E665C2244C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		415B53CBC83D8296B64DECFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLScrollViewDemo/Pods-LLScrollViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B3270EC11DE0348600C10286 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3270EE11DE0602F00C10286 /* LLEndlessPageView.m in Sources */,
 				B3270ED01DE0348600C10286 /* ViewController.m in Sources */,
 				B3270ECD1DE0348600C10286 /* AppDelegate.m in Sources */,
 				B3270ECA1DE0348600C10286 /* main.m in Sources */,
@@ -261,6 +342,7 @@
 		};
 		B3270EDD1DE0348600C10286 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED4FD3E9404F6299FA39C18 /* Pods-LLScrollViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LLScrollViewDemo/Info.plist;
@@ -272,6 +354,7 @@
 		};
 		B3270EDE1DE0348600C10286 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDBC6DDAAEA4884190D42EBA /* Pods-LLScrollViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LLScrollViewDemo/Info.plist;
@@ -300,6 +383,7 @@
 				B3270EDE1DE0348600C10286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,21 +7,30 @@
 //
 
 #import "ViewController.h"
+#import "LLEndlessPageView.h"
 
-@interface ViewController ()
+#define LLRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+#define ImageCount 5
+#define ScrollViewW self.view.bounds.size.width
+#define ScrollViewH self.view.bounds.size.height
 
+
+@interface ViewController () <UIScrollViewDelegate>
+@property (weak,nonatomic) UIPageControl *pageControl;
+@property (weak,nonatomic) UIScrollView *scrollView;
+@property (weak,nonatomic) NSTimer *timer;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    LLEndlessPageView *pageView = [LLEndlessPageView endlessPageView];
+    pageView.frame = CGRectMake(0, 0, ScrollViewW, ScrollViewH);
+    pageView.imageNames = @[@"1",@"2",@"3",@"4",@"5"];
+    [self.view addSubview:pageView];
 }
 
 @end
